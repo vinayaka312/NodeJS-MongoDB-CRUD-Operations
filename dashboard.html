@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="/scripts/dashboard.js"></script>
+</head>
+<body style='background-color: rgba(36, 34, 34, 0.658);'>
+  <div id="nav">
+    <input type="button" id="logout" class="btn btn-primary" value="Log Out">
+  </div>
+  <div class="imgcontainer">
+    <img src="./images/profile.webp" alt="Avatar" class="avatar">
+  </div>
+  <div class="modal-content" >
+    <table class="table table-dark">
+      <tr>
+        <td>
+          First Name 
+        </td>
+        <td><input type="text" name="Fname" id="fname" disabled></td>
+      </tr>
+      <tr>
+        <td>
+          Last Name 
+        </td>
+        <td><input type="text" name="Lname" id="lname" disabled></td>
+      </tr>
+      <tr>
+        <td>
+          Gender
+        </td>
+        <td id="text"> 
+          <input type="text" name="gender" id="gender" disabled>
+        </td>
+        <td id="radio">
+          <input type="radio" name="Gender" id="Gender" value="Male" disabled>
+          <label for="Gender">Male</label>
+          <input type="radio" name="Gender" id="Gender" value="Female" disabled>
+          <label for="Gender">Female</label>
+        </td>   
+      </tr>
+      <tr>
+        <td>
+          Age
+        </td>
+        <td><input type="number" name="Age" id="age" disabled></td>
+      </tr>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td><input type="email" name="Email" id="email" disabled></td>
+      </tr>
+    </table>
+    <p><a href="http://localhost:5001/changePassword"><br>Change Password</a></p>
+    <div id="edit_submit">
+      <input type="button" class="btn btn-primary" value="Edit" id="edit" style="width: 50%;">
+      <input type="button" class="btn btn-danger" value="Delete" id="delete" style="width: 50%;margin-left: 50%; margin-top: -40px;">  
+    </div>
+    <div id="confirm_cancel" hidden="true">
+      <input type="submit" class="btn btn-success" value="Confirm" id="confirm" style="width: 50%;">
+      <input type="button" class="btn btn-danger" value="Cancel" id="cancel" style="width: 50%;margin-left: 50%; margin-top: -40px;">  
+    </div>
+  </div>
+</body>
+</html>
